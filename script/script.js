@@ -1,13 +1,4 @@
 $(document).ready(function(){
-    // NOTE: 다크모드
-    $('aside .night').click(function(){
-        $('body').addClass('day');
-        $('body').removeClass('night');
-    })
-    $('aside .day').click(function(){
-        $('body').addClass('night');
-        $('body').removeClass('day');
-    })
 
     // NOTE: nav
     let about = $('#description').offset().top;
@@ -28,5 +19,14 @@ $(document).ready(function(){
     })
     $('#up').click(function(){
         $('html, body').animate({scrollTop : 0}, 400);
+    })
+
+    // NOTE: header
+    $(window).scroll(function(){
+        if($(document).scrollTop() >= 50){
+            $('header').css({"height": "90px"})
+        }else{
+            $('header').css({"height": "110px"})
+        }
     })
 })

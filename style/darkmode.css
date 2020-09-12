@@ -1,0 +1,48 @@
+/* 
+white: #ECECEC
+blue: #353866
+*/
+ 
+body.day{background-color: #ECECEC; color: #353866;}
+body.day .liner1::after{background-color: #353866;}
+body.day .liner1::before{background-color: #353866;}
+body.day #intro > div > a{border: 2px solid #353866}
+body.day #description > div:nth-child(1) > div > p{color: #ffffff;}
+body.day #description > div:nth-child(3) > div > p{color: #ffffff;}
+body.day #activity > .wrap > div > p{color: #ffffff;}
+body.day #m_descript{padding: 75px 0; background-color: #ffffff;}
+body.day #teammate > #leader > #leader_h{border: 1px solid #353866; background-color: #ECECEC;}
+body.day #teammate > #leader > #leader_h::before{background-color: #353866;}
+body.day #teammate > #leader > .wrap > div > h3::before{background-color: #353866;}
+body.day #teammate > #member > #member_h{border: 1px solid #353866; background-color: #ECECEC;}
+body.day #teammate > #member > #member_h::before{background-color: #353866;}
+body.day #teammate > #member > .wrap > div > h3::before{background-color: #353866;}
+body.day #teammate > #member > .wrap > div > table th::after{background-color: #353866;}
+body.day header{background-color: #ECECEC;}
+body.day footer{background-color: #ECECEC;}
+body.day #copyright{text-shadow: 5px 5px 10px #c9c9c9, -5px -5px 10px #ffffff;}
+body.day aside .day:hover {background-color: #353866; color: white}
+body.day aside .day:hover > span > svg > path{fill: #FCE303;}
+body.day .night{display: none;}
+
+body.night{background-color: #353866; color: #ECECEC;}
+body.night .liner1::after{background-color: #ECECEC;}
+body.night .liner1::before{background-color: #ECECEC;}
+body.night #intro > div > a{border: 2px solid #ECECEC}
+body.night #description > div:nth-child(1) > div > p{color: #222222;}
+body.night #description > div:nth-child(3) > div > p{color: #222222;}
+body.night #m_descript{padding: 75px 0; background-color: #222222;}
+body.night #teammate > #leader > #leader_h{border: 1px solid #ECECEC; background-color: #353866;}
+body.night #teammate > #leader > #leader_h::before{background-color: #ECECEC;}
+body.night #teammate > #leader > .wrap > div > h3::before{background-color: #ECECEC;}             
+body.night #teammate > #member > #member_h{border: 1px solid #ECECEC; background-color: #353866;}
+body.night #teammate > #member > #member_h::before{background-color: #ECECEC;}
+body.night #teammate > #member > .wrap > div > h3::before{background-color: #ECECEC;}
+body.night #teammate > #member > .wrap > div > table th::after{background-color: #ECECEC;}
+body.night header{background-color: #353866;}
+body.night footer{background-color: #353866;}
+body.night #copyright{text-shadow: 5px 5px 10px #2d3057, -5px -5px 10px #3d4075;}
+body.night aside .night > span > svg > path{fill: #ECECEC;}
+body.night aside .night:hover {background-color: #51547a;}
+body.night aside .night:hover > span > svg > path{fill: #FCE303;}
+body.night .day{display: none;}

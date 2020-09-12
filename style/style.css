@@ -3,116 +3,9 @@ a{text-decoration: none;}
 li{list-style: none;}
 html, body{width: 100%; height: 100%; font-family: 'Noto Sans KR', sans-serif;}
 .n{-ms-user-select: none; -moz-user-select: -moz-none; -webkit-user-select: none; -khtml-user-select: none; user-select:none;}
-
-/* 
-white: #ECECEC
-blue: #353866
- */
-
-/* NOTE: 다크모드 */
-body.day{background-color: #ECECEC; color: #353866;}
-body.day .liner1::after{background-color: #353866;}
-body.day .liner1::before{background-color: #353866;}
-body.day #intro > div > a{border: 2px solid #353866}
-body.day #description > div:nth-child(1) > div > p{color: #ffffff;}
-body.day #description > div:nth-child(3) > div > p{color: #ffffff;}
-body.day #activity > .wrap > div > p{color: #ffffff;}
-body.day #m_descript{padding: 75px 0; background-color: #ffffff;}
-body.day #teammate > #leader > #leader_h{border: 1px solid #353866; background-color: #ECECEC;}
-body.day #teammate > #leader > #leader_h::before{background-color: #353866;}
-body.day #teammate > #leader > .wrap > div > h3::before{background-color: #353866;}
-body.day #teammate > #member > #member_h{border: 1px solid #353866; background-color: #ECECEC;}
-body.day #teammate > #member > #member_h::before{background-color: #353866;}
-body.day #teammate > #member > .wrap > div > h3::before{background-color: #353866;}
-body.day #teammate > #member > .wrap > div > table th::after{background-color: #353866;}
-body.day aside .day:hover {background-color: #353866; color: white}
-body.day aside .day:hover > span > svg > path{fill: #FCE303;}
-body.day .night{display: none;}
-
-body.night{background-color: #353866; color: #ECECEC;}
-body.night .liner1::after{background-color: #ECECEC;}
-body.night .liner1::before{background-color: #ECECEC;}
-body.night #intro > div > a{border: 2px solid #ECECEC}
-body.night #description > div:nth-child(1) > div > p{color: #222222;}
-body.night #description > div:nth-child(3) > div > p{color: #222222;}
-body.night #m_descript{padding: 75px 0; background-color: #222222;}
-body.night #teammate > #leader > #leader_h{border: 1px solid #ECECEC; background-color: #353866;}
-body.night #teammate > #leader > #leader_h::before{background-color: #ECECEC;}
-body.night #teammate > #leader > .wrap > div > h3::before{background-color: #ECECEC;}             
-body.night #teammate > #member > #member_h{border: 1px solid #ECECEC; background-color: #353866;}
-body.night #teammate > #member > #member_h::before{background-color: #ECECEC;}
-body.night #teammate > #member > .wrap > div > h3::before{background-color: #ECECEC;}
-body.night #teammate > #member > .wrap > div > table th::after{background-color: #ECECEC;}
-body.night aside .night > span > svg > path{fill: #ECECEC;}
-body.night aside .night:hover {background-color: #51547a;}
-body.night aside .night:hover > span > svg > path{fill: #FCE303;}
-body.night .day{display: none;}
-
 .wrap{min-width: 1200px; width: 95%; margin: auto;}
-.day .n_a_50{background: #ECECEC; box-shadow: 5px 5px 10px #c9c9c9, -5px -5px 10px #ffffff;}
-.day .n_a_50_h{background: #ECECEC; box-shadow: 5px 5px 10px #c9c9c9, -5px -5px 10px transparent;}
-.day .n_a_75{background: #ECECEC; box-shadow:  8px 8px 15px #c9c9c9, -8px -8px 15px #ffffff;}
-.day .n_a_100{background: #ECECEC; box-shadow:  10px 10px 20px #c9c9c9, -10px -10px 20px #ffffff;}
-
-.day .n_a_50:hover{background: linear-gradient(145deg, #d4d4d4, #fdfdfd); box-shadow:  5px 5px 10px #c9c9c9, -5px -5px 10px #ffffff;}
-.day .n_a_50_h:hover{background: linear-gradient(145deg, #d4d4d4, #fdfdfd); box-shadow: 5px 5px 10px #c9c9c9, -5px -5px 10px transparent;}
-.day .n_a_75:hover{background: linear-gradient(145deg, #d4d4d4, #fdfdfd); box-shadow:  8px 8px 15px #c9c9c9, -8px -8px 15px #ffffff;}
-.day .n_a_100:hover{background: linear-gradient(145deg, #d4d4d4, #fdfdfd); box-shadow:  10px 10px 20px #c9c9c9, -10px -10px 20px #ffffff;}
-
-.day .n_a_50:active{background: #ECECEC; box-shadow: inset 5px 5px 10px #c9c9c9, inset -5px -5px 10px #ffffff;}
-.day .n_a_50_h:active{background: #ECECEC; box-shadow: inset 5px 5px 10px #c9c9c9, inset -5px -5px 10px transparent;}
-.day .n_a_75:active{background: #ECECEC; box-shadow: inset  8px 8px 15px #c9c9c9, inset -8px -8px 15px #ffffff;}
-.day .n_a_100:active{background: #ECECEC; box-shadow: inset  10px 10px 20px #c9c9c9, inset -10px -10px 20px #ffffff;}
-
-.day .n_c_50{background: #ECECEC; box-shadow: inset 5px 5px 10px #c9c9c9, inset -5px -5px 10px #ffffff;}
-.day .n_c_50_h{background: #ECECEC; box-shadow: inset 5px 5px 10px #c9c9c9, inset -5px -5px 10px transparent;}
-.day .n_c_75{background: #ECECEC; box-shadow: inset  8px 8px 15px #c9c9c9, inset -8px -8px 15px #ffffff;}
-.day .n_c_100{background: #ECECEC; box-shadow: inset  10px 10px 20px #c9c9c9, inset -10px -10px 20px #ffffff;}
-
-.day .n_n_50{background: #ECECEC; box-shadow: 5px 5px 10px #c9c9c9, -5px -5px 10px #ffffff;}
-.day .n_n_50_h{background: #ECECEC; box-shadow: 5px 5px 10px #c9c9c9, -5px -5px 10px transparent;}
-.day .n_n_75{background: #ECECEC; box-shadow:  8px 8px 15px #c9c9c9, -8px -8px 15px #ffffff;}
-.day .n_n_100{background: #ECECEC; box-shadow:  10px 10px 20px #c9c9c9, -10px -10px 20px #ffffff;}
-
-.day .n_p_50{box-shadow: 5px 5px 10px #c9c9c9, -5px -5px 10px #ffffff;}
-.day .n_p_50_h{box-shadow: 5px 5px 10px #c9c9c9, -5px -5px 10px transparent;}
-.day .n_p_75{box-shadow:  8px 8px 15px #c9c9c9, -8px -8px 15px #ffffff;}
-.day .n_p_100{box-shadow:  10px 10px 20px #c9c9c9, -10px -10px 20px #ffffff;}
-
-
-.night .n_a_50{background: #353866; box-shadow: 5px 5px 10px #2d3057, -5px -5px 10px #3d4075;}
-.night .n_a_50_h{background: #353866; box-shadow: 5px 5px 10px #2d3057, -5px -5px 10px transparent;}
-.night .n_a_75{background: #353866; box-shadow:  8px 8px 15px #2d3057, -8px -8px 15px #3d4075;}
-.night .n_a_100{background: #353866; box-shadow:  10px 10px 20px #2d3057, -10px -10px 20px #3d4075;}
-
-.night .n_a_50:hover{background: linear-gradient(145deg, #30325c, #393c6d); box-shadow:  5px 5px 10px #2d3057, -5px -5px 10px #3d4075;}
-.night .n_a_50_h:hover{background: linear-gradient(145deg, #30325c, #393c6d); box-shadow: 5px 5px 10px #2d3057, -5px -5px 10px transparent;}
-.night .n_a_75:hover{background: linear-gradient(145deg, #30325c, #393c6d); box-shadow:  8px 8px 15px #2d3057, -8px -8px 15px #3d4075;}
-.night .n_a_100:hover{background: linear-gradient(145deg, #30325c, #393c6d); box-shadow:  10px 10px 20px #2d3057, -10px -10px 20px #3d4075;}
-
-.night .n_a_50:active{background: #353866; box-shadow: inset 5px 5px 10px #2d3057, inset -5px -5px 10px #3d4075;}
-.night .n_a_50_h:active{background: #353866; box-shadow: inset 5px 5px 10px #2d3057, inset -5px -5px 10px transparent;}
-.night .n_a_75:active{background: #353866; box-shadow: inset  8px 8px 15px #2d3057 inset, -8px -8px 15px #3d4075;}
-.night .n_a_100:active{background: #353866; box-shadow: inset  10px 10px 20px #2d30 inset57, -10px -10px 20px #3d4075;}
-
-.night .n_c_50{background: #353866; box-shadow: inset 5px 5px 10px #2d3057, inset -5px -5px 10px #3d4075;}
-.night .n_c_50_h{background: #353866; box-shadow: inset 5px 5px 10px #2d3057, inset -5px -5px 10px transparent;}
-.night .n_c_75{background: #353866; box-shadow: inset  8px 8px 15px #2d3057 inset, -8px -8px 15px #3d4075;}
-.night .n_c_100{background: #353866; box-shadow: inset  10px 10px 20px #2d30 inset57, -10px -10px 20px #3d4075;}
-
-.night .n_n_50{background: #353866; box-shadow: 5px 5px 10px #2d3057, -5px -5px 10px #3d4075;}
-.night .n_n_50_h{background: #353866; box-shadow: 5px 5px 10px #2d3057, -5px -5px 10px transparent;}
-.night .n_n_75{background: #353866; box-shadow:  8px 8px 15px #2d3057, -8px -8px 15px #3d4075;}
-.night .n_n_100{background: #353866; box-shadow:  10px 10px 20px #2d3057, -10px -10px 20px #3d4075;}
-
-.night .n_p_50{box-shadow: 5px 5px 10px #2d3057, -5px -5px 10px #3d4075;}
-.night .n_p_50_h{box-shadow: 5px 5px 10px #2d3057, -5px -5px 10px transparent;}
-.night .n_p_75{box-shadow:  8px 8px 15px #2d3057, -8px -8px 15px #3d4075;}
-.night .n_p_100{box-shadow:  10px 10px 20px #2d3057, -10px -10px 20px #3d4075;}
-
 .bgC{background-repeat: no-repeat; background-position: center; background-size: contain;}
 .bgV{background-repeat: no-repeat; background-position: center; background-size: cover;}
-
 .liner1{position: absolute; width: 75px; position: absolute; left: 50%; transform: translateX(-50%); z-index: -1;}
 .liner1::after{content: ""; width: 10px; height: 100%; position: absolute; left: 0;}
 .liner1::before{content: ""; width: 55px; height: 100%; position: absolute; right: 0;}
@@ -121,30 +14,30 @@ body.night .day{display: none;}
 /* ---------- */
 
 header{width: 100%; height: 110px; position: fixed; top: 0; left: 0; z-index: 10;}
-header > .wrap{margin-top: 60px;}
+header > .wrap{position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}
 header > .wrap > h1 > a > img{height: 50px; float: left;}
 header > .wrap > ul{height: 50px; float: right;}
 header > .wrap > ul > li{float: left; line-height: 50px; margin-left: 30px; padding: 0  36px; border-radius: 25px; font-weight: bold; cursor: pointer;}
 
-aside{width: 250px; height: 40px; line-height: 37px; position: fixed; right: 20px; bottom: 30px; z-index: 10;}
-aside > *{float: right; height: 40px; cursor: pointer;}
-aside .day{border-radius: 40px; line-height: 40px; padding: 0 20px; letter-spacing: -1px;}
-aside .day > span{display: block; float: left; margin: 2px 5px 0 0;}
-aside .day > span > svg{width: 15px; height: 15px;}
-aside .night{border-radius: 40px; line-height: 40px; padding: 0 20px; letter-spacing: -1px;}
-aside .night > span{display: block; float: left; margin: 2px 5px 0 0;}
-aside .night > span > svg{width: 15px; height: 15px;}
+
+footer{width: 100%; height: 60px; position: fixed; left: 0; bottom: 0; z-index: 10;}
+footer > .wrap{position: relative; height: 60px;}
+#copyright{font-weight: 900; line-height: 60px; text-align: center;}
+aside{width: 250px; height: 40px; line-height: 37px; position: absolute; right: 0; top: 50%; transform: translateY(-50%);}
+aside > *{float: right; height: 40px; cursor: pointer; border-radius: 40px; line-height: 40px; padding: 0 20px; letter-spacing: -1px;}
+aside > * > span{display: block; float: left; margin: 2px 5px 0 0;}
+aside > * > span > svg{width: 15px; height: 15px;}
 #up{width: 40px; border-radius: 50%; margin-left: 10px;}
 
 /* ---------- */
 
-body > div, footer{width: 100%; float: left; position: relative;}
+body > div{width: 100%; float: left; position: relative;}
 #intro{height: 100vh;}
 #intro > div{width: 750px; float: left; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}
 #intro > div > h1{text-align: center;}
 #intro > div > h1 > img{height: 160px}
 #intro > div > p{width: 100%; height: 100px; margin-top: 10px; border-radius: 50px; text-align: center; line-height: 100px; font-size: 40px;}
-#intro > div > a{display: block; width: 127px; line-height: 37px; text-align: center; margin: 15px auto 0; border-radius: 10px; font-size: 20px;}
+#intro > div > a{display: block; width: 127px; line-height: 37px; text-align: center; margin: 15px auto 0; border-radius: 10px; font-size: 20px; cursor: pointer;}
 
 /* ---------- */
 
@@ -171,7 +64,7 @@ body > div, footer{width: 100%; float: left; position: relative;}
 
 /* ---------- */
 
-#our{height: 40vh; background-attachment: fixed; background-size: cover; background-image: url('../img/main_img.png');}
+#our{height: 40vh; background-attachment: fixed; background-size: cover; background-image: url('../img/main_img.png'); background-position: top;}
 #our > #our_Cover{width: 100%; height: 100%; background-color: rgba(0,0,0,0.4);}
 #our > .liner2{top: 200px;}
 
@@ -218,7 +111,7 @@ body > div, footer{width: 100%; float: left; position: relative;}
 #project > .wrap > #project_contents > #photo_area > #poster_infor > p{font-size: 18px; line-height: 40px;}
 #project > .wrap > #project_contents > #photo_area > #poster_infor > p:nth-child(2){margin-top: 50px;}
 #project > .wrap > #project_contents > #photo_area > #photo > table{margin-top: 75px;}
-#project > .wrap > #project_contents > #photo_area > #photo > table td{width: 160px; display: block; float: left; height: 160px; margin: 23px; overflow: hidden; border-radius: 20px;}
+#project > .wrap > #project_contents > #photo_area > #photo > table td{width: 160px; display: block; float: left; height: 160px; margin: 23px; overflow: hidden; border-radius: 20px; cursor: pointer}
 
 /* #photo2{background-image: url('../img/competition/first/2.jpg');}
 #photo3{background-image: url('../img/competition/first/3.jpg');}
@@ -242,7 +135,7 @@ body > div, footer{width: 100%; float: left; position: relative;}
 #teammate > #leader > .wrap > div > *{text-align: center; display: block; margin: auto;}
 #teammate > #leader > .wrap > div > h3{font-size: 25px; margin-bottom: 30px; position: relative;}
 #teammate > #leader > .wrap > div > h3::before{content: ""; width: 5px; height: 75px; position: absolute; bottom: 50px; left: 50%; transform: translateX(-50%);}
-#teammate > #leader > .wrap > div > span{font-size: 25px; margin-bottom: 30px;}
+#teammate > #leader > .wrap > div > span{font-size: 25px; margin-bottom: 30px; background-position: top;}
 
 #teammate > #member{width: 100%; height: auto; float: left;}
 #teammate > #member > #member_h{font-size: 25px; text-align: center; padding: 10px; width: 150px; margin: 100px auto 0; position: relative;}
@@ -275,7 +168,6 @@ body > div, footer{width: 100%; float: left; position: relative;}
 
 /* ---------- */
 
-footer{width: 100%; height: 250px; background-color: #353866;}
 
 
 
