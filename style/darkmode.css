@@ -25,6 +25,8 @@ body.day aside .day:hover {background-color: #353866; color: white}
 body.day aside .day:hover > span > svg > path{fill: #FCE303;}
 body.day .night{display: none;}
 body.day aside > #up > svg{fill: #353866}
+body.day #intro > div > a{color: #353866;}
+body.day #intro > div > a:hover{background-color: #353866; color: #ffffff;}
 
 body.night{background-color: #353866; color: #ECECEC;}
 body.night .liner1::after{background-color: #ECECEC;}
