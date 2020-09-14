@@ -29,4 +29,16 @@ $(document).ready(function(){
             $('header').css({"height": "110px"})
         }
     })
+
+    for(let i = 1; i<=9; i++){
+        $("#photo"+i).click(function(){
+            if($("#photo"+i).css("background-image") != "none"){
+                $("#pop_photo").show();
+                $("#pop_photo_img").css("background-image", $("#photo"+i).css("background-image"));
+                $("#pop_photo").click(function(){
+                    $(this).hide()
+                })
+            }
+        })
+    }
 })
