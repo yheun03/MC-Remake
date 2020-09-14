@@ -24,6 +24,7 @@ body.day #copyright{text-shadow: 5px 5px 10px #c9c9c9, -5px -5px 10px #ffffff;}
 body.day aside .day:hover {background-color: #353866; color: white}
 body.day aside .day:hover > span > svg > path{fill: #FCE303;}
 body.day .night{display: none;}
+body.day aside > #up > svg{fill: #353866}
 
 body.night{background-color: #353866; color: #ECECEC;}
 body.night .liner1::after{background-color: #ECECEC;}
@@ -46,3 +47,4 @@ body.night aside .night > span > svg > path{fill: #ECECEC;}
 body.night aside .night:hover {background-color: #51547a;}
 body.night aside .night:hover > span > svg > path{fill: #FCE303;}
 body.night .day{display: none;}
+body.night aside > #up > svg{fill: #ffffff}
