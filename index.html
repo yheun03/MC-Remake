@@ -13,6 +13,7 @@
     <script src="./script/jquery-1.12.3.js"></script>
     <script src="./script/script.js"></script>
     <script src="./script/darkmode.js"></script>
+    <script src="./script/gallery.js"></script>
     <!-- <link rel="icon" href="./img/ico.png"> -->
     <link rel="stylesheet" href="./style/style.css">
     <link rel="stylesheet" href="./style/neumorphism.css">
@@ -202,7 +203,7 @@
                     <span class="project_number n_a_50">2</span>
                     <span class="project_number n_a_50">3</span>
                     <span class="project_number n_a_50">4</span>
-                    <span class="project_arrow"><svg viewBox="0 0 1792 1792" style="transform: rotate(180deg);" xxmlns="http://www.w3.org/2000/svg"><path d="M1203 544q0 13-10 23l-393 393 393 393q10 10 10 23t-10 23l-50 50q-10 10-23 10t-23-10l-466-466q-10-10-10-23t10-23l466-466q10-10 23-10t23 10l50 50q10 10 10 23z"/></svg></span>
+                    <span class="project_arrow"><svg viewBox="0 0 1792 1792" xxmlns="http://www.w3.org/2000/svg"><path d="M1203 544q0 13-10 23l-393 393 393 393q10 10 10 23t-10 23l-50 50q-10 10-23 10t-23-10l-466-466q-10-10-10-23t10-23l466-466q10-10 23-10t23 10l50 50q10 10 10 23z"/></svg></span>
                 </div>
             </div>
             <div id="project_contents">
@@ -212,27 +213,27 @@
 
                 <div id="photo_area">
                     <div id="poster_infor">
-                        <h4>그린 메이커톤</h4>
-                        <p><span>팀장 : </span>김영종</p>
-                        <p><span>팀원 : </span>은영환</p>
-                        <p><span>결과 : </span>최우수상(완성도상)</p>
+                        <h4 id="poster_title">그린 메이커톤</h4>
+                        <p>팀장 : <span id="poster_leader">김영종</span></p>
+                        <p>팀원 : <span id="poster_teammate">은영환</span></p>
+                        <p>결과 : <span id="poster_result">최우수상(완성도상)</span></p>
                     </div>
                     <div id="photo">
                         <table>
                             <tr>
-                                <td id="photo1" class="n_p_50 bgV"></td>
-                                <td id="photo2" class="n_p_50 bgV"></td>
-                                <td id="photo3" class="n_p_50 bgV"></td>
+                                <td id="photo1" class="photo n_p_50 bgV"></td>
+                                <td id="photo2" class="photo n_p_50 bgV"></td>
+                                <td id="photo3" class="photo n_p_50 bgV"></td>
                             </tr>
                             <tr>
-                                <td id="photo4" class="n_p_50 bgV"></td>
-                                <td id="photo5" class="n_p_50 bgV"></td>
-                                <td id="photo6" class="n_p_50 bgV"></td>
+                                <td id="photo4" class="photo n_p_50 bgV"></td>
+                                <td id="photo5" class="photo n_p_50 bgV"></td>
+                                <td id="photo6" class="photo n_p_50 bgV"></td>
                             </tr>
                             <tr>
-                                <td id="photo7" class="n_p_50 bgV"></td>
-                                <td id="photo8" class="n_p_50 bgV"></td>
-                                <td id="photo9" class="n_p_50 bgV"></td>
+                                <td id="photo7" class="photo n_p_50 bgV"></td>
+                                <td id="photo8" class="photo n_p_50 bgV"></td>
+                                <td id="photo9" class="photo n_p_50 bgV"></td>
                             </tr>
                         </table>
                     </div>

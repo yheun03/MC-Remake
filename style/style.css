@@ -109,9 +109,10 @@ body > div{width: 100%; float: left; position: relative;}
 #project > .wrap > #project_h{padding: 0 119px; float: left;}
 #project > .wrap > #project_h > p{width: 388px; height: 92px; border-radius: 92px; line-height: 92px; font-size: 30px; text-align: center; float: left;}
 #project > .wrap > #project_h > div{height: 92px; float: left; padding-left: 50px;}
-#project > .wrap > #project_h > div > span{display: block; width: 92px; height: 92px; margin: 0 17px; line-height: 92px; font-size: 30px; text-align: center; border-radius: 50%; float: left;}
+#project > .wrap > #project_h > div > span{display: block; width: 92px; height: 92px; margin: 0 17px; line-height: 92px; font-size: 30px; text-align: center; border-radius: 50%; float: left; cursor: pointer;}
 #project > .wrap > #project_h > div > .project_arrow{width: 60px; margin: 0; position: relative;}
 #project > .wrap > #project_h > div > .project_arrow svg{position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}
+#project > .wrap > #project_h > div > .project_arrow:last-child svg{transform: translate(-50%, -50%) rotate(180deg);}
 /* #project > .wrap > #project_h > div > .active{background-color: #353866; color: #ffffff} */
 #project > .wrap > #project_contents{height: auto; float: left; padding-top: 100px;}
 #project > .wrap > #project_contents > #poster_area{width: 578px; height: 1000px; padding: 45px 0 95px; background-image: url('../img/apple-mobile-description.png'); position: relative; border-radius: 50px; overflow: hidden; float: left;}
@@ -164,8 +165,8 @@ body > div{width: 100%; float: left; position: relative;}
 
 
 
-#poster{width: 100%; height: 857px; background-image: url('../img/competition/first.jpg');}
-#photo1{background-image: url('../img/competition/first/1.jpg');}
+#poster{width: 100%; height: 857px; background-image: url('../img/competition/1.jpg');}
+#photo1{background-image: url('../img/competition/1/1.jpg');}
 #leader_image1{background-image: url('../img/KakaoTalk_20200216_213712450.jpg');}
 
 /* ---------- */
