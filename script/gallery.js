@@ -137,15 +137,6 @@ $(document).ready(function(){
         }
     }
 
-    // NOTE: 대회 열람 순서
-    $(".project_number").click(function(){
-        let pagecnt1 = parseInt($(this).html()) -1;
-        console.log(pagecnt1)
-        $(".project_number").removeClass("n_c_50").addClass("n_a_50")
-        $(this).removeClass("n_a_50").addClass("n_c_50")
-        showCompetition(pagecnt1+1)
-    })
-
     // NOTE: PHOTO 갤러리
     for(let i = 1; i<=9; i++){
         $("#photo"+i).click(function(){
@@ -159,28 +150,44 @@ $(document).ready(function(){
         })
     }
 
+    // NOTE: 대회 열람 순서
+    $(".project_number").click(function(){
+        let pagecnt1 = parseInt($(this).html()) -1;
+        if(pagecnt1 == 0){ $(".project_arrow:first-child").css({"opacity":".4"})
+        }else{ $(".project_arrow:first-child").css({"opacity":"1"}) }
+        $(".project_number").removeClass("n_c_50").addClass("n_a_50")
+        $(this).removeClass("n_a_50").addClass("n_c_50")
+        showCompetition(pagecnt1+1)
+    })
+
     // NOTE: 전 페이지로 이동
     $(".project_arrow:first-child").click(function(){
-        let pagecnt1 = parseInt($('#project .n_c_50').html());
-        console.log(pagecnt1)
-        if(pagecnt1 != 1 || pagecnt2 <= 5){
-            $(".project_number").removeClass("n_c_50").addClass("n_a_50")
-            $(".project_number:nth-child("+pagecnt1+")").removeClass("n_a_50").addClass("n_c_50")
-            showCompetition(pagecnt1 - 1)
-        }else if(pagecnt2 > 5 || pagecnt2 <= 9){
-            for(let y = 2; y <= 5; y++){
-                $("#project_h > div .project_number:nth-child("+y+")").text(y+3);
-            }
-            if(pagecnt2 <= 8+1){
-                $(".project_number").removeClass("n_c_50").addClass("n_a_50")
-                $(".project_number:nth-child("+(pagecnt2 - 4)+")").removeClass("n_a_50").addClass("n_c_50")
-                showCompetition(pagecnt2 - 1)
-            }else{
-                $(".project_arrow:last-child").css({"opacity":".4"})
-            }
 
+
+        let pagecnt1 = parseInt($('#project .n_c_50').html());
+
+
+        if(pagecnt1+0 == 1){
+            $(".project_arrow:first-child").css({"opacity":".4"})
+        }else{
+            if(pagecnt1 <= 5){
+                $(".project_number").removeClass("n_c_50").addClass("n_a_50")
+                $(".project_number:nth-child("+pagecnt1+")").removeClass("n_a_50").addClass("n_c_50")
+                showCompetition(pagecnt1 - 1)
+            }else if(pagecnt2 > 5 || pagecnt2 <= 9){
+                for(let y = 2; y <= 5; y++){
+                    $("#project_h > div .project_number:nth-child("+y+")").text(y);
+                }
+                if(pagecnt2 <= 8+1){
+                    $(".project_number").removeClass("n_c_50").addClass("n_a_50")
+                    $(".project_number:nth-child("+(pagecnt2 - 4)+")").removeClass("n_a_50").addClass("n_c_50")
+                    showCompetition(pagecnt2 - 1)
+                }
+            }
         }
+
     })
+
 
     // NOTE: 다음 페이지로 이동
     $(".project_arrow:last-child").click(function(){
