@@ -21,12 +21,22 @@ $(document).ready(function(){
         $("html, body").animate({scrollTop : 0}, 400);
     })
 
-    // NOTE: header
     $(window).scroll(function(){
-        if($(document).scrollTop() >= 50){
+        ScrollPosition = $(document).scrollTop();
+        // NOTE: header
+        if(ScrollPosition >= 50){
             $("header").css({"height": "90px"})
         }else{
             $("header").css({"height": "110px"})
+        }
+
+        // NOTE: aside
+        if(ScrollPosition <= $("footer").offset().top - 900){
+            console.log(ScrollPosition)
+            console.log($("footer").offset().top)
+            $("aside").css({"bottom": "30px"})
+        }else{
+            $("aside").css({"bottom": "10px"})
         }
     })
 
