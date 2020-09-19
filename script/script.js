@@ -32,8 +32,6 @@ $(document).ready(function(){
 
         // NOTE: aside
         if(ScrollPosition <= $("footer").offset().top - 900){
-            console.log(ScrollPosition)
-            console.log($("footer").offset().top)
             $("aside").css({"bottom": "30px"})
         }else{
             $("aside").css({"bottom": "10px"})
