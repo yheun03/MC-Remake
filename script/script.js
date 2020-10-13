@@ -2,7 +2,7 @@ $(document).ready(function(){
 
     // NOTE: nav
     let about = $("#description").offset().top;
-    let activity = $("#activity").offset().top;
+    let activity = $("#activity").offset().top + 100;
     let project = $("#project").offset().top;
     let teammate = $("#teammate").offset().top;
     $("header ul > li:nth-child(1)").click(function(){
@@ -37,6 +37,4 @@ $(document).ready(function(){
             $("aside").css({"bottom": "10px"})
         }
     })
-
-    
 })
