@@ -69,11 +69,16 @@ $(document).ready(function(){
                 break;
             case 5:
                 $(".photo").css({"background-image":  "none"})
-                $("#poster_title").html("5")
-                $("#poster_leader").html("")
-                $("#poster_teammate").html("")
-                $("#poster_result").html("")
+                $("#poster_title").html("명동 루프탑 캐릭터 메이커톤")
+                $("#poster_leader").html("은영환")
+                $("#poster_teammate").html("이규은, 이정훈, 강현채, 이수현, 이영석")
+                $("#poster_result").html("1등")
                 let img5 = [
+                    "./img/competition/5/1.jpg",
+                    "./img/competition/5/2.jpg",
+                    "./img/competition/5/3.jpg",
+                    "./img/competition/5/4.jpg",
+                    "./img/competition/5/5.jpg"
                 ]
                 for(let i = 0; i <= img5.length; i++){
                     $("#photo"+i).css({"background-image":  "url('./img/competition/5/"+i+".jpg')"})
@@ -82,16 +87,16 @@ $(document).ready(function(){
                 break;
             case 6:
                 $(".photo").css({"background-image":  "none"})
-                $("#poster_title").html("6")
-                $("#poster_leader").html("")
-                $("#poster_teammate").html("")
-                $("#poster_result").html("")
+                $("#poster_title").html("제5회 Creative Space G AI & IoT 메이커톤")
+                $("#poster_leader").html("은영환")
+                $("#poster_teammate").html("강산들, 강현채")
+                $("#poster_result").html("2등")
                 let img6 = [
-                    "./img/competition/4/1.jpg",
-                    "./img/competition/4/2.jpg",
-                    "./img/competition/4/3.jpg",
-                    "./img/competition/4/4.jpg",
-                    "./img/competition/4/5.jpg"
+                    "./img/competition/6/1.jpg",
+                    "./img/competition/6/2.jpg",
+                    "./img/competition/6/3.jpg",
+                    "./img/competition/6/4.jpg",
+                    "./img/competition/6/5.jpg"
                 ]
                 for(let i = 0; i <= img6.length; i++){
                     $("#photo"+i).css({"background-image":  "url('./img/competition/6/"+i+".jpg')"})
