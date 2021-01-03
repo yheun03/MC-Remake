@@ -1,7 +1,7 @@
 *{margin: 0; padding: 0; box-sizing: border-box;}
 a{text-decoration: none;}
 li{list-style: none;}
-html, body{width: 100%; height: 100%; font-family: 'Noto Sans KR', sans-serif;}
+html, body{width: 100%; height: auto; float: left; font-family: 'Noto Sans KR', sans-serif;}
 .n{-ms-user-select: none; -moz-user-select: -moz-none; -webkit-user-select: none; -khtml-user-select: none; user-select:none;}
 .wrap{min-width: 1200px; width: 95%; margin: auto;}
 .bgC{background-repeat: no-repeat; background-position: center; background-size: contain;}
@@ -14,9 +14,19 @@ html, body{width: 100%; height: 100%; font-family: 'Noto Sans KR', sans-serif;}
 #loading{width: 100%; height: 100vh; position: fixed; background-color: rgba(0,0,0,0.4); z-index: 1000; backdrop-filter: blur(4px); display: none;}
 #pop_photo{position: fixed; width: 100%; height: 100vh; background-color: rgba(0,0,0,0.4); z-index: 1000; display: none;}
 #pop_photo:hover{cursor: url("../img/x.png") 10 10, auto;}
-/* url("../img/x.png") */
 #pop_photo > #pop_photo_img{position: absolute; width: 90vw; height: 80vh; top: 50%; left: 50%; transform: translate(-50%, -50%);}
 
+.mac{width: 1200px; height: auto; left: 50%; transform: translateX(-50%); overflow: hidden; position: relative; border-radius: 20px; border: 0.4px solid #353866;}
+.mac > .macHeader{width: 100%; height: 40px; padding: 12.5px; float: left; background-color: #E3E3E3;}
+.mac > .macHeader > span{display: block; width: 15px; height: 15px; border-radius: 50%; float: left; margin-right: 7px; border: 0.4px solid #353866;}
+.mac > .macHeader > span:nth-child(1){background-color: #FF5F57;}
+.mac > .macHeader > span:nth-child(2){background-color: #FCE303;}
+.mac > .macHeader > span:nth-child(3){background-color: #27CA40;}
+.mac > .macScreen{width: 100%; height: auto; float: left; padding: 50px 100px; background-color: #353866;}
+.mac > .macScreen > h2{color: #FFE97B; text-align: center; font-size: 40px; float: left; width: 100%; font-weight: 900; position: relative;}
+.mac > .macScreen > h2::after{content: ""; position: absolute; bottom: -30px; left: 50%; transform: translateX(-50%); background-color: #7BFFE4; width: 2px; height: 20px;}
+.mac > .macScreen > p{text-align: center; font-size: 30px; line-height: 70px; font-weight: 400; position: relative; float: left; width: 100%; height: auto; color: white;}
+.mac > .macScreen > p.mac_q{margin: 40px 0 70px; font-weight: 700; font-size: 40px;}
 /* ---------- */
 
 header{width: 100%; height: 110px; position: fixed; top: 0; left: 0; z-index: 10;}
@@ -51,65 +61,18 @@ body > div{width: 100%; float: left; position: relative;}
 
 /* ---------- */
 
-#description{height: auto; margin: 200px 0;}
-#description > div.mac{width: 1200px; height: auto; position: relative; left: 50%; transform: translateX(-50%); overflow: hidden; position: relative; border-radius: 20px; border: 0.4px solid #353866;}
-#description > div.mac > .macHeader{width: 100%; height: 40px; padding: 12.5px; float: left; background-color: #E3E3E3;}
-#description > div.mac > .macHeader > span{display: block; width: 15px; height: 15px; border-radius: 50%; float: left; margin-right: 7px; border: 0.4px solid #353866;}
-#description > div.mac > .macHeader > span:nth-child(1){background-color: #FF5F57;}
-#description > div.mac > .macHeader > span:nth-child(2){background-color: #FCE303;}
-#description > div.mac > .macHeader > span:nth-child(3){background-color: #27CA40;}
-#description > div.mac > .macScreen{width: 100%; height: auto; float: left; padding: 50px 100px; background-color: #353866;}
-#description > div.mac > .macScreen > h2{color: #FFE97B; text-align: center; font-size: 40px; float: left; width: 100%; font-weight: 900; position: relative;}
-#description > div.mac > .macScreen > h2::after{content: ""; position: absolute; bottom: -30px; left: 50%; transform: translateX(-50%); background-color: #7BFFE4; width: 2px; height: 20px;}
-#description > div.mac > .macScreen > p{text-align: center; font-size: 40px; font-weight: 700; position: relative; float: left; width: 100%; height: auto;}
-#description > div.mac > .macScreen > p:nth-child(2){margin: 40px 0 70px;}
-#description > div.mac > .macScreen > p:nth-child(3){font-weight: 400; line-height: 70px; font-size: 30px;}
-#description > div.mac > .macScreen > p:nth-child(4){font-weight: 400; line-height: 70px; font-size: 30px;}
-
-#description > div:nth-child(3){height: 900px; position: relative;}
-#description > div:nth-child(3) > div{width: 430px; height: 735px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background-image: url('../img/apple-mobile-description.png'); padding: 100px;}
-#description > div:nth-child(3) > div > h2{color: #7BFFE4; text-align: center; font-size: 40px; font-weight: 900; position: relative;}
-#description > div:nth-child(3) > div > h2::after{content: ""; position: absolute; bottom: -30px; left: 50%; transform: translateX(-50%); background-color: #7BFFE4; width: 2px; height: 20px;}
-#description > div:nth-child(3) > div > p{text-align: center; font-size: 40px; font-weight: 700; position: relative;}
-#description > div:nth-child(3) > div > p:nth-child(2){margin: 40px 0 70px;}
-#description > div:nth-child(3) > div > p:nth-child(3){font-weight: 400; line-height: 70px; font-size: 30px;}
-#description > div:nth-child(3) > div > p:nth-child(4){font-weight: 400; line-height: 70px; font-size: 30px;}
-
-#description > .liner1{height: 1500px; top: 500px;}
-
+#description{height: auto; padding: 200px 0;}
 /* ---------- */
 
-#our{height: 400px; background-attachment: fixed; background-size: cover; background-image: url('../img/main_img.png'); background-position: top;}
+#our{height: 45vh; background-attachment: fixed; background-size: cover; background-image: url('../img/main_img.png'); background-position: top;}
 #our > #our_Cover{width: 100%; height: 100%; background-color: rgba(0,0,0,0.4);}
-#our > .liner2{top: 200px;}
 
 /* ---------- */
-#activity{height: auto; padding-top: 400px; float: left;}
-#activity > p{width: 750px; height: 100px; float: left; left: 50%; transform: translateX(-50%); position: relative; border-radius: 50px; text-align: center; line-height: 100px; font-size: 40px; margin-bottom: 50px;}
-#activity > div.mac{width: 1200px; height: auto; margin-bottom: 100px; float: left; left: 50%; transform: translateX(-50%); overflow: hidden; position: relative; border-radius: 20px; border: 0.4px solid #353866;}
-#activity > div.mac > .macHeader{width: 100%; height: 40px; padding: 12.5px; float: left; background-color: #E3E3E3;}
-#activity > div.mac > .macHeader > span{display: block; width: 15px; height: 15px; border-radius: 50%; float: left; margin-right: 7px; border: 0.4px solid #353866;}
-#activity > div.mac > .macHeader > span:nth-child(1){background-color: #FF5F57;}
-#activity > div.mac > .macHeader > span:nth-child(2){background-color: #FCE303;}
-#activity > div.mac > .macHeader > span:nth-child(3){background-color: #27CA40;}
-#activity > div.mac > .macScreen{width: 100%; height: auto; float: left; padding: 75px 100px; background-color: #353866;}
-#activity > div.mac > .macScreen > p{text-align: center; width: 100%; height: auto; font-size: 30px; font-weight: 700; line-height: 70px; float: left; position: relative; color: #ffffff;}
-#activity > div:nth-child(3){padding: 75px 0 100px; height: 200px; width: 75%; margin: auto}
-#activity > div:nth-child(3) > div{height: 200px; float: left;}
-#activity > div:nth-child(3) > div:nth-child(1){width: 70%; background-image: url('../img/apple-keyboard.png');}
-#activity > div:nth-child(3) > div:nth-child(2){width: 30%; background-image: url('../img/apple-mouse.png');}
+#activity{height: auto; padding: 200px 0;}
 
-
-/* #activity > .wrap > p{width: 750px; height: 100px; margin: 10px auto; border-radius: 50px; text-align: center; line-height: 100px; font-size: 40px;}
-#activity > .wrap > div{width: 1000px; height: auto; margin: auto; background-image: url('../img/apple-mac-description.png'); padding: 120px 100px;}
-#activity > .wrap > div > p{position: relative; font-weight: 300; line-height: 50px; font-size: 25px;}
-#activity > .wrap > div:nth-child(3){background-image: none; padding: 0 100px; height: 200px; margin: auto}
-#activity > .wrap > div:nth-child(3) > div{height: 200px; float: left;}
-#activity > .wrap > div:nth-child(3) > div:nth-child(1){width: 70%; background-image: url('../img/apple-keyboard.png');}
-#activity > .wrap > div:nth-child(3) > div:nth-child(2){width: 30%; background-image: url('../img/apple-mouse.png');} */
 /* ---------- */
 
-#m_descript{padding: 75px 0; margin-top: -70px; float: left;}
+#m_descript{padding: 75px 0; float: left;}
 #m_descript > .wrap{padding: 0 200px;}
 #m_descript > .wrap > div{width: calc(100% / 3); float: left; padding: 0 50px; position: relative;}
 #m_descript > .wrap > div > *{float: left; width: 100%;}
@@ -151,26 +114,25 @@ body > div{width: 100%; float: left; position: relative;}
 #teammate > .liner1{height: 900px;}
 #teammate > h2{font-weight: 30px; text-align: center; padding: 10px; width: 250px; margin: auto; border: 1px solid #353866}
 #teammate > #leader{width: 100%; height: auto; float: left; margin-bottom: 150px;}
-#teammate > #leader > #leader_h{font-size: 25px; text-align: center; padding: 10px; width: 150px; margin: 100px auto 0; position: relative;}
-#teammate > #leader > #leader_h::before{content: ""; position: absolute; width: 980px; height: 4px; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: -1;}
+#teammate > #leader > #leader_h{font-size: 25px; z-index: 100; text-align: center; padding: 10px; width: 150px; margin: 100px auto 0; position: relative;}
 #teammate > #leader > .wrap{width: 1300px; margin-top: 6px;}
-#teammate > #leader > .wrap > div{width: calc(100%/4); height: auto; float: left; padding: 50px}
+#teammate > #leader > .wrap > div{width: calc(100%/4); height: auto; float: left; padding: 50px; position: relative;}
+#teammate > #leader > .wrap > div::before{content: ""; position: absolute; left: 50%; top: -35px; transform: translateX(-50%); width: 5px; height: 70px; background-color: #353866;}
+#teammate > #leader > .wrap > div:not(:last-child)::after{content: ""; position: absolute; left: 50%; top: -35px; width: 100%; height: 5px; background-color: #353866;}
 #teammate > #leader > .wrap > div > *{text-align: center; display: block; margin: auto;}
 #teammate > #leader > .wrap > div > h3{font-size: 25px; margin-bottom: 30px; position: relative;}
-#teammate > #leader > .wrap > div > h3::before{content: ""; width: 5px; height: 75px; position: absolute; bottom: 50px; left: 50%; transform: translateX(-50%);}
 #teammate > #leader > .wrap > div > span{font-size: 25px; margin-bottom: 30px; background-position: top;}
 
 #teammate > #member{width: 100%; height: auto; float: left;}
-#teammate > #member > #member_h{font-size: 25px; text-align: center; padding: 10px; width: 150px; margin: 100px auto 0; position: relative;}
-#teammate > #member > #member_h::before{content: ""; position: absolute; width: 980px; height: 4px; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: -1;}
+#teammate > #member > #member_h{font-size: 25px; text-align: center; padding: 10px; width: 150px; margin: 100px auto 0; position: relative; z-index: 100;}
 #teammate > #member > .wrap{width: 1300px; margin-top: 6px;}
-#teammate > #member > .wrap > div{width: calc(100%/4); height: auto; float: left; padding: 50px}
+#teammate > #member > .wrap > div{width: calc(100%/4); height: auto; float: left; padding: 50px; position: relative;}
 #teammate > #member > .wrap > div > *{text-align: center; display: block; margin: auto;}
 #teammate > #member > .wrap > div > h3{font-size: 25px; margin-bottom: 30px; position: relative;}
-#teammate > #member > .wrap > div > h3::before{content: ""; width: 5px; height: 75px; position: absolute; bottom: 50px; left: 50%; transform: translateX(-50%);}
+#teammate > #member > .wrap > div::before{content: ""; position: absolute; left: 50%; top: -35px; transform: translateX(-50%); width: 5px; height: 70px; background-color: #353866;}
+#teammate > #member > .wrap > div:not(:last-child)::after{content: ""; position: absolute; left: 50%; top: -35px; width: 100%; height: 5px; background-color: #353866;}
 #teammate > #member > .wrap > div > table{width: 100%; font-size: 24px;}
 #teammate > #member > .wrap > div > table th{padding-right: 20px; position: relative;}
-#teammate > #member > .wrap > div > table th::after{content: ""; width: 1px; height: 65px; position: absolute; top: 5px; right: 8px;}
 
 .leader_image{width: 180px; height: 180px; border-radius: 50%; overflow: hidden;}
 
