@@ -14,7 +14,7 @@ $(document).ready(function(){
                 for(let i = 0; i <= img1.length; i++){
                     $("#photo"+i).css({"background-image":  "url('./img/competition/1/"+i+".jpg')"})
                 }
-                $("#poster").css({"background-image":  "url('./img/competition/1.jpg')"})
+                $("#project .iphoneScreen").css({"background-image":  "url('./img/competition/1.jpg')"})
                 break;
             case 2:
                 $(".photo").css({"background-image":  "none"})
@@ -31,7 +31,7 @@ $(document).ready(function(){
                 for(let i = 0; i <= img2.length; i++){
                     $("#photo"+i).css({"background-image":  "url('./img/competition/2/"+i+".jpg')"})
                 }
-                $("#poster").css({"background-image":  "url('./img/competition/2.jpg')"})
+                $("#project .iphoneScreen").css({"background-image":  "url('./img/competition/2.jpg')"})
                 break;
             case 3:
                 $(".photo").css({"background-image":  "none"})
@@ -47,7 +47,7 @@ $(document).ready(function(){
                 for(let i = 0; i <= img3.length; i++){
                     $("#photo"+i).css({"background-image":  "url('./img/competition/3/"+i+".jpg')"})
                 }
-                $("#poster").css({"background-image":  "url('./img/competition/3.jpg')"})
+                $("#project .iphoneScreen").css({"background-image":  "url('./img/competition/3.jpg')"})
                 break;
             case 4:
                 $(".photo").css({"background-image":  "none"})
@@ -65,7 +65,7 @@ $(document).ready(function(){
                 for(let i = 0; i <= img4.length; i++){
                     $("#photo"+i).css({"background-image":  "url('./img/competition/4/"+i+".jpg')"})
                 }
-                $("#poster").css({"background-image":  "url('./img/competition/4.jpg')"})
+                $("#project .iphoneScreen").css({"background-image":  "url('./img/competition/4.jpg')"})
                 break;
             case 5:
                 $(".photo").css({"background-image":  "none"})
@@ -83,7 +83,7 @@ $(document).ready(function(){
                 for(let i = 0; i <= img5.length; i++){
                     $("#photo"+i).css({"background-image":  "url('./img/competition/5/"+i+".jpg')"})
                 }
-                $("#poster").css({"background-image":  "url('./img/competition/5.jpg')"})
+                $("#project .iphoneScreen").css({"background-image":  "url('./img/competition/5.jpg')"})
                 break;
             case 6:
                 $(".photo").css({"background-image":  "none"})
@@ -101,7 +101,7 @@ $(document).ready(function(){
                 for(let i = 0; i <= img6.length; i++){
                     $("#photo"+i).css({"background-image":  "url('./img/competition/6/"+i+".jpg')"})
                 }
-                $("#poster").css({"background-image":  "url('./img/competition/6.jpg')"})
+                $("#project .iphoneScreen").css({"background-image":  "url('./img/competition/6.jpg')"})
                 break;
             case 7:
                 $(".photo").css({"background-image":  "none"})
@@ -119,7 +119,7 @@ $(document).ready(function(){
                 for(let i = 0; i <= img7.length; i++){
                     $("#photo"+i).css({"background-image":  "url('./img/competition/7/"+i+".jpg')"})
                 }
-                $("#poster").css({"background-image":  "url('./img/competition/7.jpg')"})
+                $("#project .iphoneScreen").css({"background-image":  "url('./img/competition/7.jpg')"})
                 break;
             case 8:
                 $(".photo").css({"background-image":  "none"})
@@ -137,7 +137,7 @@ $(document).ready(function(){
                 for(let i = 0; i <= img8.length; i++){
                     $("#photo"+i).css({"background-image":  "url('./img/competition/8/"+i+".jpg')"})
                 }
-                $("#poster").css({"background-image":  "url('./img/competition/8.jpg')"})
+                $("#project .iphoneScreen").css({"background-image":  "url('./img/competition/8.jpg')"})
                 break;
         }
     }
